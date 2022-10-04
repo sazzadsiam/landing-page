@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --light-blu: #E7EAF2;
+    --gray: #D3D6DD;
+    --blue: #4D5297;
+    --deep-blue: #393F93;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 48px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: var(--light-blu);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0 0 0;
+    position: sticky;
+    top: -60px;
+    margin-bottom: 50px;
+}
+
+.header-img {
+    max-width: 226px;
+    width: 100%;
+}
+
+.nav {
+    background: var(--deep-blue);
+    width: 100%;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav ul li {
+    padding: 13px;
+}
+
+/* end of header */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    padding: 0 15px;
+}
+
+form {
+    padding: 20px 0;
+}
+
+form input[type="email"] {
+    max-width: 311px;
+    width: 100%;
+    padding: 6px 24px;
+    border: 2px solid var(--deep-blue);
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    padding: 6.5px 28px;
+    background: var(--deep-blue);
+    color: #fbfbfd;
+    font-weight: 600;
+    border: 0.5px solid var(--deep-blue);
+}
+
+/* end of hero */
+
+.features {
+    max-width: 950px;
+    margin: 0 auto 60px auto;
+    padding: 0 40px;
+}
+
+.feature-icon {
+    display: none;
+}
+
+.feature-text {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-heading {
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    line-height: 22px;
+}
+
+/* end of featur section */
+
+.video {
+    max-width: 560px;
+    margin: 0 auto 80px auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* end of video-section */
+
+.prices {
+    padding: 60px 20px;
+    background: var(--blue);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.price {
+    text-align: center;
+    border: 2px solid var(--deep-blue);
+    background: #E7EAF2;
+    max-width: 310px;
+    height: 310px;
+}
+
+.price-heading {
+    background: var(--deep-blue);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 75px;
+    margin-bottom: 18px;
+}
+
+.amount {
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-style: italic;
+}
+.price-desc {
+    font-size: 18px;
+    padding: 0 48px;
+    height: 82px;
+    margin-bottom: 30px;
+}
+
+.price-button {
+    background: var(--deep-blue);
+    color: white;
+    font-size: 21px;
+    padding: 8px 35px;
+    margin-bottom: 22px;
+    border: none;
+}
+
+/* end of price-section */
+
+.footer {
+    padding: 30px 5px;
+    text-align: end;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    margin-left: 40px;
+    color: black;
+}
+
+/* end of footer section */
+
+@media(min-width: 700px) {
+    a {
+        color: black;
+    }
+    .header {
+        justify-content: space-between;
+        padding: 0px 60px;
+        top: 0;
+        margin-bottom: 80px;
+    }
+    .nav {
+        background: var(--light-blu);
+        width: fit-content;
+    }
+    .nav ul li {
+        margin-left: 45px;
+    }
+    .hero {
+        margin-bottom: 50px;
+    }
+    form {
+        display: flex;
+        gap: 20px;
+    }
+    form input[type="email"] {
+        width: 311px;
+        margin-bottom: 0;
+    }
+    .feature-icon {
+        display: inline;
+        color: var(--deep-blue);
+        font-size: 40px;
+    }
+    .feature-text {
+        text-align: start;
+    }
+    .feature {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        align-items: center;
+        grid-column-gap: 40px;
+    }
+    .prices {
+        padding: 130px 0;
+    }
+    .footer {
+        padding: 40px 60px;
+    }
+}
+@media(min-width: 900px) {
+    .nav ul li {
+        margin-left : 54.85px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+}
+
+
+
+
